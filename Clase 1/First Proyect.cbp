@@ -27,6 +27,19 @@
 					<Add option="-s" />
 				</Linker>
 			</Target>
+			<Target title="Ejercicio 2">
+				<Option output="bin/Ejercicio 2/First Proyect" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/Ejercicio 2/" />
+				<Option object_output="obj/Ejercicio 2/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
