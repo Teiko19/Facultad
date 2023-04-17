@@ -6,11 +6,10 @@ int main () {
       size_vect_impar = 0,
       size_vect_total = 0,
       vect_original[11], 
-      vect_par[size_vect_par], 
-      vect_impar[size_vect_impar],
-      vect_total[size_vect_total], 
-      i,
-      t;
+      vect_par[11], 
+      vect_impar[11],
+      vect_total[11], 
+      i;
 
   printf("ingrese 10 valores aleatorios\n");
 
@@ -24,6 +23,8 @@ int main () {
   for ( i=0 ; i<11 ; i++ ) {
     printf("[%d]", vect_original[i]);
   };
+
+  printf("\n--------------------");
 
   // CARGAR VECTOR PAR
 
@@ -39,6 +40,8 @@ int main () {
     printf("[%d]", vect_par[i]);
   };
 
+    printf("\n--------------------");
+
   // CARGAR VECTOR IMPAR
 
   for ( i=0 ; i<11 ; i++ ) {
@@ -53,23 +56,17 @@ int main () {
     printf("[%d]", vect_impar[i]);
   };
 
+  printf("\n--------------------");
+
   // CARGAR VECTOR TOTAL
 
-  for ( i=0 ; i<2 ; i++) {
-    if ( i == 0 ) {
-      for ( t=0 ; t<size_vect_par ; t++) {
-        printf("\n valor del vector par: %d", vect_par[t]);
-        vect_total[size_vect_total++] = vect_par[t];
-        printf("\n valor t: %d", t);
-      };
-      printf("\n termina carga par");
-    } else {
-      for ( t ; t<11 ; t++) {
-        vect_total[size_vect_total++] = vect_par[t];
-        printf("\n valor t: %d", t);
-      };
-    }
-  };
+  for (i=0 ; i<size_vect_par ; i++) {
+    vect_total[i] = vect_par[i];
+    size_vect_total++;
+  }
+  for (i=0 ; i<size_vect_impar ; i++) {
+    vect_total[size_vect_total++] = vect_impar[i];
+  }
 
   printf("\n Vector Total = ");
   for ( i=0 ; i<size_vect_total ; i++ ) {
