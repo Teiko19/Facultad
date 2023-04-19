@@ -7,7 +7,9 @@ void main(){
     scanf("%s",&d);
     printf("Ingresar el mes\n");
     scanf("%s",&m);
-    printf("ingresar el año\n");
+    printf("ingresar el aï¿½o\n");
     scanf("%s",&a);
-    printf("La fecha es: %s/%s/%s",a,m,d);
+    printf("La fech es: %s/%s/%s",a,m,d);
+
+    printf("Hola");
 }
