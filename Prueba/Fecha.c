@@ -1,15 +1,8 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-void main(){
-    char d[2], m[2], a[4];
-    printf("Ingresar el dia\n");
-    scanf("%s",&d);
-    printf("Ingresar el mes\n");
-    scanf("%s",&m);
-    printf("ingresar el a�o\n");
-    scanf("%s",&a);
-    printf("La fech es: %s/%s/%s",a,m,d);
-
-    printf("Hola");
+void main() {
+  int num = 2, x = 1/2;
+  (num == 2) ? 
+    printf("%d", x) : 
+    printf("Chau") ;
 }
